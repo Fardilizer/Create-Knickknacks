@@ -1,0 +1,15 @@
+{
+  "itemGroup.createknickknacks": "Example Mod Tab",
+  "block.createknickknacks.example_block": "Example Block",
+  "item.createknickknacks.example_item": "Example Item",
+
+  "createknickknacks.configuration.title": "Example Mod Configs",
+  "createknickknacks.configuration.section.createknickknacks.common.toml": "Example Mod Configs",
+  "createknickknacks.configuration.section.createknickknacks.common.toml.title": "Example Mod Configs",
+  "createknickknacks.configuration.items": "Item List",
+  "createknickknacks.configuration.logDirtBlock": "Log Dirt Block",
+  "createknickknacks.configuration.magicNumberIntroduction": "Magic Number Text",
+  "createknickknacks.configuration.magicNumber": "Magic Number",
+
+  "block.createknickknacks.encased_red_wool": "Encased Red Wool"
+}

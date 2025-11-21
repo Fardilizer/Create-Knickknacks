@@ -1,0 +1,49 @@
+modLoader="javafml"
+
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+    modId= "${mod_id}"
+    version = "0.0.1"
+    displayName = "Create: Knickknacks"
+    displayURL = "https://www.curseforge.com/minecraft/mc-mods/create"
+    logoFile = "icon.png"
+    authors = "Fardilizer"
+    description = '''Create addon that adds a bunch of random stuffs'''
+
+[[dependencies.createknickknacks]]
+    modId = "neoforge"
+    type = "required"
+    versionRange = "[21.1.215,)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.createknickknacks]]
+    modId = "minecraft"
+    type = "required"
+    versionRange = "[1.21.1]"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.createknickknacks]]
+    modId="fusion"
+    type="required"
+    versionRange="[1.2.11+b,)"
+    ordering="NONE"
+    side="CLIENT"
+
+# [[dependencies.createknickknacks]]
+# modId = "create"
+# type="required"
+# versionRange = "${create_version_range}"
+# ordering = "NONE"
+# side = "BOTH"
+
+# [[dependencies."${mod_id}"]]
+# modId = "flywheel"
+# type = "required"
+# versionRange = "${flywheel_version_range}"
+# ordering = "AFTER"
+# side = "CLIENT"
+
