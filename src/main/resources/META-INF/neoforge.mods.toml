@@ -4,34 +4,34 @@ loaderVersion="${loader_version_range}"
 license="${mod_license}"
 
 [[mods]]
-    modId= "${mod_id}"
-    version = "0.0.1"
-    displayName = "Create: Knickknacks"
-    displayURL = "https://www.curseforge.com/minecraft/mc-mods/create"
-    logoFile = "icon.png"
-    authors = "Fardilizer"
-    description = '''Create addon that adds a bunch of random stuffs'''
+modId="${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+displayURL = ""
+logoFile = "icon.png"
+authors = "${mod_authors}"
+description = '''${mod_description}'''
 
 [[dependencies.createknickknacks]]
-    modId = "neoforge"
-    type = "required"
-    versionRange = "[21.1.215,)"
-    ordering = "NONE"
-    side = "BOTH"
+modId = "neoforge"
+type = "required"
+versionRange = "[${neo_version},)"
+ordering = "NONE"
+side = "BOTH"
 
 [[dependencies.createknickknacks]]
-    modId = "minecraft"
-    type = "required"
-    versionRange = "[1.21.1]"
-    ordering = "NONE"
-    side = "BOTH"
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version}"
+ordering = "NONE"
+side = "BOTH"
 
 [[dependencies.createknickknacks]]
-    modId="fusion"
-    type="required"
-    versionRange="[1.2.11+b,)"
-    ordering="NONE"
-    side="CLIENT"
+modId="fusion"
+type="required"
+versionRange="${fusion_version_range}"
+ordering="NONE"
+side="CLIENT"
 
 # [[dependencies.createknickknacks]]
 # modId = "create"
