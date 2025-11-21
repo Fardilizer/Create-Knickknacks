@@ -24,6 +24,20 @@ public class ModBlocks {
                     .sound(SoundType.WOOL)
             ));
 
+    public static final DeferredBlock<Block> INDUSTRIAL_RED_CARPET = registerBlock("industrial_red_carpet",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.WOOL)
+            ));
+
+    public static final DeferredBlock<Block> RIBBED_INDUSTRIAL_RED_CARPET = registerBlock("ribbed_industrial_red_carpet",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.WOOL)
+            ));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
