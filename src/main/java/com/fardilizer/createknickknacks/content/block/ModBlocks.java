@@ -1,7 +1,7 @@
-package com.fardilizer.createknickknacks.block;
+package com.fardilizer.createknickknacks.content.block;
 
 import com.fardilizer.createknickknacks.createknickknacks;
-import com.fardilizer.createknickknacks.item.ModItems;
+import com.fardilizer.createknickknacks.content.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
 
 import java.util.function.Supplier;
 
@@ -26,17 +27,16 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> INDUSTRIAL_RED_CARPET = registerBlock("industrial_red_carpet",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f)
+                    .sound(SoundType.WOOD)
                     .requiresCorrectToolForDrops()
-                    .sound(SoundType.WOOL)
             ));
 
-    public static final DeferredBlock<Block> RIBBED_INDUSTRIAL_RED_CARPET = registerBlock("ribbed_industrial_red_carpet",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f)
-                    .requiresCorrectToolForDrops()
-                    .sound(SoundType.WOOL)
-            ));
+    //public static final DeferredBlock<Block> RIBBED_INDUSTRIAL_RED_CARPET = registerBlock("ribbed_industrial_red_carpet",
+    //        () -> new Block(BlockBehaviour.Properties.of()
+    //                .strength(4f)
+    //                .requiresCorrectToolForDrops()
+    //                .sound(SoundType.WOOL)
+    //        ));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

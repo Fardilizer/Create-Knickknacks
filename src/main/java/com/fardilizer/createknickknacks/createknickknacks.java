@@ -1,7 +1,11 @@
 package com.fardilizer.createknickknacks;
 
-import com.fardilizer.createknickknacks.block.ModBlocks;
-import com.fardilizer.createknickknacks.item.ModItems;
+import com.fardilizer.createknickknacks.content.block.ModBlocks;
+import com.fardilizer.createknickknacks.content.item.ModItems;
+import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.simibubi.create.foundation.item.ItemDescription;
+import com.simibubi.create.foundation.item.KineticStats;
+import com.simibubi.create.foundation.item.TooltipModifier;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -60,4 +64,5 @@ public class createknickknacks {
     public void onServerStarting(ServerStartingEvent event) {
 
     }
+
 }

@@ -1,4 +1,4 @@
-package com.fardilizer.createknickknacks.item;
+package com.fardilizer.createknickknacks.content.item;
 
 import com.fardilizer.createknickknacks.createknickknacks;
 import net.neoforged.bus.api.IEventBus;

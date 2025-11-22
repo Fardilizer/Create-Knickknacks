@@ -11,5 +11,7 @@
   "createknickknacks.configuration.magicNumberIntroduction": "Magic Number Text",
   "createknickknacks.configuration.magicNumber": "Magic Number",
 
-  "block.createknickknacks.encased_red_wool": "Encased Red Wool"
+  "block.createknickknacks.encased_red_wool": "Encased Red Wool",
+  "block.createknickknacks.industrial_red_carpet": "Industrial Red Carpet",
+  "block.createknickknacks.ribbed_industrial_red_carpet": "Ribbed Industrial Red Carpet"
 }
